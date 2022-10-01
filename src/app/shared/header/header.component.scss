@@ -1,12 +1,25 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 16px;
 
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     background-color: var(--color-primary);
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
     &__menu {
         display: flex;
         list-style: none;
+        margin-right: 24px;
         &--item {
             padding: 0 16px;
         }
