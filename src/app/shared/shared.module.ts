@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
-  declarations: [StartButtonComponent, HeaderComponent],
+  declarations: [HeaderComponent, StartButtonComponent],
   imports: [
     CommonModule
   ],
